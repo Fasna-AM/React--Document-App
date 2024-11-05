@@ -90,7 +90,7 @@ const Home = () => {
         <div className='d-flex justify-content-center align-items-center flex-column py-3' style={{ minHeight: "100vh" }}>
             <div>
                 <h1 className="fw-bolder shadow p-3 ">Document App</h1>
-                <Button className='btn bg-primary ms-5 text-white m-3 fw-bolder' onClick={handleOpen}>Add Document</Button>
+                <Button className='btn bg-primary ms-4 text-white m-3 fw-bolder' onClick={handleOpen}>Add Document</Button>
                 <Modal
                     open={open}
                     onClose={handleClose}
@@ -115,7 +115,7 @@ const Home = () => {
 
                 </Modal>
             </div>
-            <div className='row ms-3  w-75'>
+            <div className='row  w-75'>
                 {
                     allDocuments?.length>0 ?
                     allDocuments?.map((document, index) => (
